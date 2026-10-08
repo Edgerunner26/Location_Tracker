@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+	<application android:allowBackup="true"
+				 android:icon="@mipmap/appicon"
+				 android:roundIcon="@mipmap/appicon_round"
+				 android:supportsRtl="true">
+		<!-- Replace with my Google Maps API key from Google Cloud Console. -->
+		<meta-data android:name="com.google.android.geo.API_KEY"
+				   android:value="AIzaSyDUk-tG-tF4f3rYPwk_8WKGQ31wiehCMys" />
+	</application>
+
+	<!-- Network access for map tiles. -->
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+
+	<!-- Location permissions for tracking. -->
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-feature android:name="android.hardware.location" android:required="false" />
+	<uses-feature android:name="android.hardware.location.gps" android:required="false" />
+	<uses-feature android:name="android.hardware.location.network" android:required="false" />
+</manifest>
